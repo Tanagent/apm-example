@@ -1,4 +1,3 @@
 declare module '@elastic/apm-rum-react' {
-	const content: any;
-	export default content;
+	export function withTransaction(p: string, q: string): any;
 }

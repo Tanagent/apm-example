@@ -2,7 +2,6 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-// @ts-ignore
 import { withTransaction } from '@elastic/apm-rum-react'
 
 const Home: NextPage = () => {
@@ -71,5 +70,4 @@ const Home: NextPage = () => {
   )
 }
 
-// @ts-ignore
-export default withTransaction('AboutComponent', 'component')(AboutComponent)
+export default withTransaction('Home', 'component')(Home)
